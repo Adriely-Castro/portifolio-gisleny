@@ -21,17 +21,18 @@ function escrevendoLetra (){
 escrevendoLetra()
 
 
-/*function menuMobile(){
+function menuMobile(){
     const ativaMenu = document.querySelector('.fa-bars');
     const navMenu = document.querySelector('header .navegacao-primaria');
     
     
     ativaMenu.addEventListener('click',()=>{
-        activeMenu.classList.toggle('fa-x');
+        ativaMenu.classList.toggle('fa-x');
         navMenu.classList.toggle('ativado');
     });
 }
 
+/*
 function sobreMim(){
 
     const divExperiencia = document.querySelectorAll('.experience_content div');
@@ -80,4 +81,4 @@ function sobreMim(){
 }
 
 sobreMim()
-/*
+*/
