@@ -18,7 +18,7 @@ function escrevendoLetra (){
     ativaLetra(titulo);
 }
 
-escrevendoLetra()
+escrevendoLetra();
 
 
 function menuMobile(){
@@ -31,6 +31,8 @@ function menuMobile(){
         navMenu.classList.toggle('ativado');
     });
 }
+
+menuMobile();
 
 /*
 function sobreMim(){
