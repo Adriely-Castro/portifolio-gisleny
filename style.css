@@ -302,15 +302,12 @@ main .sobre {
 
 /* RESPONSIVIDADE */
 
-@media(max-width: 992px){
+@media(max-width: 785px){
     .content img{
         display: none;
     }
     .content {
-        background-image: url(img/gisleny4.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-        justify-self: center;
+        grid-template-columns: 1fr;
     }
     header .navegacao-primaria{
         display: none;
@@ -326,6 +323,7 @@ main .sobre {
         font-size: 3rem;
     }
 }
+
 
 header .navegacao-primaria.ativado{
     background: #ffffff;
@@ -351,6 +349,7 @@ header .navegacao-primaria.ativado{
     .sobre_conteudo{
         grid-column: 1/-1;
     }
+
 }
 
 /* SEÇÃO SERVICES*/
@@ -668,7 +667,9 @@ header .navegacao-primaria.ativado{
 }
 
 @media(max-width: 992px){
-    
+    .my_services ul{
+        grid-template-columns: 1fr 1fr;
+    }
 }
 
 /*Página do Obrigado*/
