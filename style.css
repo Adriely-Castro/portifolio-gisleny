@@ -12,13 +12,15 @@
 }
 
 body{
-    max-width: 1200px;
     margin: 0 auto;
+    padding: 0;
     background-color: #ffffff;
     font-family: 'Geologica';
 }
 
+
 /* HEADER */
+
 
 header{
     background-color: #ffffff;
@@ -28,6 +30,8 @@ header{
     justify-content: space-around;
     font-family: 'Geologica';
 }
+
+
 
 header h1{
     color: #ffa028;
@@ -70,13 +74,21 @@ header .navegacao-primaria li a:hover::after {
     border-bottom: 4px solid #6F387B;
 }
 
+.content {
+    max-width: 1200px;
+    width: 100%;
+    padding: 20px;
+    background-color: #6F387B; /* Cor de fundo do conteúdo */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
 
 .section-div{
     animation: inicializar .7s forwards;
     background-color: #6F387B;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-items: start;
+    justify-items: center;
     align-items: end;
     gap: 60px;
     padding-left: 30px;
@@ -84,7 +96,7 @@ header .navegacao-primaria li a:hover::after {
     font-family: 'Geologica';
 }
 
-.section-div div {
+.section-div div{
     margin-top: 120px;
     align-self: start;
     display: grid;
@@ -142,12 +154,21 @@ main{
     color: #6c3c7b;
 }
 
-main .sobre {
+.content2 {
+    max-width: 1200px;
+    width: 100%;
+    padding: 70px;
+    gap: 30px;
+    background-color: #ffa028; /* Cor de fundo do conteúdo */
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+}
+
+main .sobre {
+    display: grid;
     gap: 30px;
     justify-content: center;
-    padding: 70px;
+    padding-bottom: 70px;
 }
 
 .sobre_titulo{
@@ -282,11 +303,11 @@ main .sobre {
 /* RESPONSIVIDADE */
 
 @media(max-width: 992px){
-    .section-div img{
+    .content img{
         display: none;
     }
-    .section-div{
-        background-image: url(img/gisleny.png);
+    .content {
+        background-image: url(img/gisleny4.png);
         background-repeat: no-repeat;
         background-size: cover;
         justify-self: center;
@@ -307,7 +328,7 @@ main .sobre {
 }
 
 header .navegacao-primaria.ativado{
-    background: linear-gradient(#ffc278, #ffa028);
+    background: #ffffff;
     position: absolute;
     display: grid;
     top: 80px;
@@ -343,7 +364,7 @@ header .navegacao-primaria.ativado{
 }
 
 .sobre_titulo2 h1{
-    font-size: 2.5rem;
+    font-size: 2.9rem;
     margin-bottom: 15px;
 }
 
@@ -368,6 +389,7 @@ header .navegacao-primaria.ativado{
     background-color: #ffa028;
 }
 
+
 .services{
     margin-top: -30px;
     background-color: #ffffff;
@@ -391,7 +413,6 @@ header .navegacao-primaria.ativado{
     position: relative;
     padding: 5px;
     display: grid;
-    gap: 20px;
     text-align: center;
     max-width: 150px;
     align-content: center;
@@ -505,6 +526,7 @@ header .navegacao-primaria.ativado{
     align-items: start;
 }
 
+
 .resume_generico h2 {
     font-family: 'Poppins';
     font-size: 1.5rem;
@@ -571,57 +593,165 @@ header .navegacao-primaria.ativado{
 .experience_content ul li.ativo{
     color: #ffffff;
 }
-
-
-/*MEUS DIPLOMAS E CURSOS*/
-
-/*
-.resume_generico .education_content div{
-    background-color: #ffa028;
-    padding: 40px;
-    animation: ladoSecao .5s ease-in-out forwards;
-    position: relative;
+/* CONTATOS*/
+.conteiner {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-items: center;
+    background-color: #ffc681;
+    
 }
 
-.education_content ul{
-    color: #ffa028;
-    gap: 10px;
+.contact{
     display: flex;
-    cursor: pointer;
-    margin-top: 20px;
+    align-items: center;
     justify-content: center;
+    flex-direction: column;
+    padding: 10px 45px;
+    min-height: 80vh;
+    background: #ffa028;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+.contact h2{
+    color: #f5f5f5;
+    font-size: 1.5rem;
+    margin: 2rem;
+    text-align: center;
+}
+.contact form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.contact form label{
+    color: #f5f5f5;
+    font-size: 17px;
+    margin-bottom: 4px;
+}
+.contact form input{
+    padding: 15px;
+    outline: none;
+    border: 0;
+    margin-bottom: 20px;
+    font-size: 15px;
+    transition: all 0.5s;
+}
+.contact form input:focus{
+    border-radius: 16px;
+}
+.contact form textarea{
+    padding: 10px;
+    outline: none;
+    border: 0;
+    font-size: 15px;
+    margin-bottom: 30px;
+    transition: all 0.5s;
+}
+.contact form textarea:focus{
+    border-radius: 16px;
+}
+.contact form button{
+    padding: 15px;
+    cursor: pointer;
+    font-size: 16px;
+    background: transparent;
+    border: 2px solid #f5f5f5;
+    color: #f5f5f5;
+    transition: all 1s;
+    margin-bottom: 20px;
+}
+.contact form button:hover{
+    background: #f5f5f5;
+    color: #101026;
+    border-radius: 16px;
 }
 
-.resume_generico .education_content div::before{
-    content: '';
-    border-right: 30px solid transparent;
-    border-bottom: 30px solid #ffa028;
-    position: absolute;
-    top: -20px;
-    left: 30px;
-    display: inline-block;
+@media(max-width: 992px){
+    
 }
 
-.resume_generico .education_content div span{
-    color: #6F387B;
-    font-family: 'Poppins';
-    font-weight: bold;
+/*Página do Obrigado*/
+
+.main2{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   min-height: 100vh;
+   background: #ffaf4d;
+   flex-direction: column;
+}
+.text{
+    font-size: 45px;
+    color: #f5f5f5;
+    margin-bottom: 30px;
+}
+.paragrafo{
+    color: #f5f5f5;
+    margin-bottom: 50px;
+    font-size: 25px;
+}
+.btn{
+    padding: 15px 55px;
+    background: #f5f5f5;
+    text-decoration: none;
+    color: #000000;
+    font-size: 18px;
+    transition: all 0.5s;
+}
+.btn:hover{
+    border-radius: 16px;
 }
 
-.resume_generico .education_content div h3{
-    font-family: 'Poppins';
-    margin: 10px 0;
+/*footer*/
+
+footer{
+    background-color: #ffffff;
+    padding: 30px;
 }
 
-.resume_generico .education_content div p{
-    color: #f1ece6;
-    font-size: 1.1rem;
-}
-
-.education_content ul li.ativo{
+.footer_sociais {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    align-items: center;
+    position: relative;
     color: #ffffff;
 }
 
-.resume_generico .education_content div.ativo{
-    display: block;
+.footer_sociais li{
+    background-color: #6F387B;
+    border-radius: 50%;
+    border: 1px solid #9b76a3;
 }
+
+.footer_sociais i {
+    padding: 30px;
+    font-size: 1.5rem;
+    color: #ffffff;
+}
+
+.footer_sociais li:hover{
+    transition: .3s ease-in-out;
+    cursor: pointer;
+    background-color: #9b76a3;
+}
+
+.footer_sociais::before{
+    content: '';
+    height: 5px;
+    position: absolute;
+    width: 200px;
+    bottom: -30px;
+    background-color: #6F387B;
+}
+
+footer .footer_comercial{
+    text-align: center;
+    color: #000000;
+    margin: 90px 90px auto;
+    font-size: 1.3rem;
+    font-family: 'Poppins';
+}
+
