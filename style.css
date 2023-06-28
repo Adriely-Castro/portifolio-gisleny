@@ -40,7 +40,7 @@ header h1{
 }
 
 header span{
-    color: #6F387B;
+    color: #ffa028;
     font-family: 'Geologica';
 }
 
@@ -104,11 +104,13 @@ header .navegacao-primaria li a:hover::after {
 }
 .section-div div h2{
     font-weight: bold;
+    font-size: 2.5rem;
     color: #ffffff;
 }
 
 .section-div div p{
     font-weight: 200;
+    font-size: 1.3rem;
     color: #ffffff;
     margin-bottom: 60px;
 }
@@ -429,6 +431,7 @@ header .navegacao-primaria.ativado{
     font-size: .9rem;
     font-family: 'poppins';
     font-weight: 500;
+    padding-top: 10px;
 }
 
 .my_services ul li p {
@@ -562,7 +565,7 @@ header .navegacao-primaria.ativado{
 }
 
 .resume_generico .experience_content div h3{
-    background-color: #9b76a3;
+    background-color: #6F387B;
     animation: ladoSecao .5s ease-in-out forwards;
     padding: 20px;
     position: relative;
@@ -575,7 +578,7 @@ header .navegacao-primaria.ativado{
 .resume_generico .experience_content div h3::before{
     content: '';
     border-right: 30px solid transparent;
-    border-bottom: 30px solid #9b76a3;
+    border-bottom: 30px solid #6F387B;
     position: absolute;
     top: -20px;
     left: 30px;
@@ -592,6 +595,13 @@ header .navegacao-primaria.ativado{
 .experience_content ul li.ativo{
     color: #ffffff;
 }
+
+.resume_generico .experience_content div i{
+    font-size: 1.9rem;
+    color: #ffa028;
+}
+
+
 /* CONTATOS*/
 .conteiner {
     display: grid;
