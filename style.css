@@ -97,7 +97,7 @@ header .navegacao-primaria li a:hover::after {
 }
 
 .section-div div{
-    margin-top: 120px;
+    margin-top: 60px;
     align-self: start;
     display: grid;
     gap: 30px;
@@ -236,12 +236,13 @@ main .sobre {
     grid-template-columns: 1fr 1fr;
     font-family: 'Geologica';
 }
-
+/*
 .sobre_texto h1{
     font-size: 2.3rem;
     color: #6F387B;
     grid-column: 1/-1;
 }
+*/
 
 .sobre_texto h1::after{
     background-color: #6F387B;
@@ -267,6 +268,19 @@ main .sobre {
     gap: 15px;
     align-items: center;
     font-family: 'Geologica';
+    padding-top: 20px;
+}
+
+.sobre_info1{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column: 1/-1;
+    gap: 15px;
+    align-items: center;
+    font-family: 'Geologica';
+    font-size: 1.5rem;
+    color: #6F387B;
 }
 
 .sobre_info i{
@@ -370,10 +384,12 @@ header .navegacao-primaria.ativado{
 }
 
 .sobre_titulo2 p{
-    color: #6F387B;
-    font-size: 1.4rem;
+    color: #9c71a6;
+    font-size: 1.2rem;
     margin-bottom: 1rem;
     position: relative;
+    text-align: center;
+    font-weight: 200;
 }
 
 .sobre_titulo2 div {
@@ -514,6 +530,135 @@ header .navegacao-primaria.ativado{
     background-color: #ffa028;
 }
 
+.sobre_titulo4{
+    margin: 30px;
+    grid-column: 1/-1;
+    text-align: center;
+    color: #6F387B;
+    font-family: 'Geologica';
+}
+
+.sobre_titulo4 h1{
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.sobre_titulo4 p{
+    color: #ffffff;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+.sobre_titulo4 div {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.sobre_titulo4 span{
+    display: block;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: #6F387B;
+}
+
+
+.negocio{
+    color: #ffffff;
+    background-color: #ffa028;
+    padding-top: 30px;
+}
+
+.resume_negocio{
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: start;
+}
+
+
+.resume_negocio h2 {
+    font-family: 'Poppins';
+    font-size: 1.5rem;
+    background-color: #9b76a3;
+    justify-self: start;
+    padding: 10px;
+    border-radius: 3px;
+}
+
+.resume_negocio h2 i{
+    margin-right: 10px;
+}
+
+.experience{
+    margin-bottom: 30px;
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.experience_negocio ul{
+    color: #9b76a3;
+    gap: 10px;
+    display: flex;
+    cursor: pointer;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+.resume_negocio .experience_negocio div h3{
+    background-color: #6F387B;
+    animation: ladoSecao .5s ease-in-out forwards;
+    padding: 20px;
+    position: relative;
+}
+
+.resume_negocio .experience_negocio div.ativo{
+    display: block;
+}
+/*
+.resume_negocio .experience_negocio div h3::before{
+    content: '';
+    border-right: 30px solid transparent;
+    border-bottom: 30px solid #6F387B;
+    position: absolute;
+    top: -20px;
+    left: 30px;
+    display: inline-block;
+}
+*/
+
+.resume_negocio .experience_negocio div h3{
+    font-family: 'Poppins';
+    margin: 30px 0;
+    font-weight: 300;
+}
+
+.experience_negocio ul li.ativo{
+    color: #ffffff;
+}
+
+.resume_negocio .experience_negocio div i{
+    font-size: 1.9rem;
+    color: #ffa028;
+}
+
+
+.negocio_p{ 
+    font-style: italic;
+    font-weight: 100;
+    display: block;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 50px;
+}
+
+.negocio_p p{
+    font-size: 1.5rem;
+}
+
 .my_resume{
     color: #ffffff;
     background-color: #6F387B;
@@ -546,13 +691,6 @@ header .navegacao-primaria.ativado{
     margin-bottom: 30px;
     grid-column: 1;
     grid-row: 1;
-}
-
-.education{
-    margin-bottom: 30px;
-    grid-column: 2;
-    grid-row: 1;
-    color: #ffffff;
 }
 
 .experience_content ul{
