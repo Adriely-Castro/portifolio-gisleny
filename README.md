@@ -1,43 +1,28 @@
-Portfólio Gisleny – Assistente Financeira Virtual
-Este projeto é um portfólio desenvolvido para apresentar uma Assistente Financeira Virtual chamada Gisleny. O objetivo é demonstrar habilidades em desenvolvimento web utilizando HTML, CSS e JavaScript.
+# Portfólio Gisleny – Assistente Financeira Virtual
 
-🧾 Sobre o Projeto
-O portfólio visa destacar as funcionalidades e características da assistente financeira virtual Gisleny, proporcionando uma interface interativa e informativa para os usuários.
+Este é um projeto de portfólio desenvolvido para apresentar a **Gisleny**, uma assistente financeira virtual. O objetivo é demonstrar habilidades em desenvolvimento web com foco em design, interatividade e estruturação de páginas estáticas.
 
-🛠️ Tecnologias Utilizadas
-HTML: Estruturação do conteúdo da página.
+## ✨ Funcionalidades
 
-CSS: Estilização e layout responsivo.
+- Apresentação da assistente financeira virtual Gisleny  
+- Interface moderna e responsiva  
+- Formulário com redirecionamento para página de agradecimento
 
-JavaScript: Interatividade e funcionalidades dinâmicas.
+## 🛠️ Tecnologias Utilizadas
 
-📁 Estrutura do Projeto
-index.html: Página principal do portfólio.
+- **HTML** – Estrutura da página  
+- **CSS** – Estilização e layout responsivo  
+- **JavaScript** – Funcionalidades interativas
 
-obrigada.html: Página de agradecimento ou confirmação.
+## 📁 Estrutura do Projeto
 
-style.css: Arquivo de estilos para o layout e design.
+portifolio-gisleny/
+├── index.html
+├── obrigada.html
+├── style.css
+├── script.js
+└── img/
 
-script.js: Scripts JavaScript para funcionalidades interativas.
+## 📁 Hospedado em
 
-img/: Pasta contendo imagens utilizadas no projeto.
-
-🚀 Como Executar o Projeto
-Clone o repositório:
-
-bash
-Copiar
-Editar
-git clone https://github.com/Adriely-Castro/portifolio-gisleny.git
-Navegue até o diretório do projeto:
-
-bash
-Copiar
-Editar
-cd portifolio-gisleny
-Abra o arquivo index.html em seu navegador preferido.
-
-📌 Observações
-O projeto é totalmente estático e não requer backend.
-
-hospedado em: https://gisleny-castro.netlify.app
+https://gisleny-castro.netlify.app
